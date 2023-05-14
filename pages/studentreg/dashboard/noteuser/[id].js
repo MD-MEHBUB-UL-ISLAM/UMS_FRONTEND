@@ -1,4 +1,4 @@
-import MyLayout from "../../../component/layout";
+import MyLayout1 from "@/pages/component/layout1";
 import Image from "next/image";
 import axios from "axios";
 import { useRouter } from 'next/router'
@@ -8,7 +8,7 @@ export default function UserProfile({ data } ) {
 const router = useRouter();
     return (
       <>
-      <MyLayout title="Note"/>
+      <MyLayout1 title="Note"/>
    
 
       <h1>NoteName: {data.Notename}</h1>
