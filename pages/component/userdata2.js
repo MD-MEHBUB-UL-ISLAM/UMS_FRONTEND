@@ -12,7 +12,7 @@ export default function UserLayout1(data) {
                     <div className="mx-auto w-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                
                         <div className="flex flex-col items-center pb-10">
-                            <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={"http:/localhost:3000/reg/getimage/" + data.filename} alt="me" width="150" height="150" />
+                            <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={"https://umsbackendteo-production.up.railway.app/reg/getimage/" + data.filename} alt="me" width="150" height="150" />
                             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{data.fullname}</h5>
           
                             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{data.name}</h5>
