@@ -31,13 +31,11 @@ export default function GetUsers({ data }) {
   );
   }
   
-
-  
-  export async function getServerSideProps(context) {
-    const id = context.params.id;
-  
-    const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/findbook/' + id);
-    const data = await response.data;
-  
-    return { props: { data } }
+ export async function getServerSideProps() {
+ 
+      const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/indexbook');
+      const data = await response.data;
+    
+  return { props: { data } }
   }
+  
