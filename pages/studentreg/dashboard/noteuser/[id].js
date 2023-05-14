@@ -27,7 +27,7 @@ const router = useRouter();
  export async function getServerSideProps(context) {
  const id=context.params.id;
 
-    const response = await axios.get('http://localhost:3000/reg/findnote/'+id);
+    const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/findnote/'+id);
     const data = await response.data;
 
    

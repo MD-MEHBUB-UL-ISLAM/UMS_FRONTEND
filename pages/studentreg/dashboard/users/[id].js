@@ -25,7 +25,7 @@ const router = useRouter();
  export async function getServerSideProps(context) {
  const id=context.params.id;
 
-    const response = await axios.get('http://localhost:3000/reg/findadmin/'+id);
+    const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/findadmin/'+id);
     const data = await response.data;
    
 return { props: { data } }

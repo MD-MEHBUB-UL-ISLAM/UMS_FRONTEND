@@ -16,7 +16,7 @@ const UpdateDataForm = () => {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3000/student/index')
+    axios.get('https://umsbackendteo-production.up.railway.app/student/index')
       .then(response => setData(response.data))
       .catch(error => console.log(error));
   }, []);
@@ -45,7 +45,7 @@ const UpdateDataForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    axios.put(`http://localhost:3000/student/updatestudent/${selectedData.id}`, {
+    axios.put(`https://umsbackendteo-production.up.railway.app/student/updatestudent/${selectedData.id}`, {
       ...selectedData,
       fullname,
       email,

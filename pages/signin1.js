@@ -14,7 +14,7 @@ export default function SignIn1() {
     event.preventDefault()
 
     try {
-      const response = await axios.post('http://localhost:3000/reg/signin', { email, password })
+      const response = await axios.post('https://umsbackendteo-production.up.railway.app/reg/signin', { email, password })
       console.log("res: "+response.data)
       
         sessionStorage.setItem('email', response.data);

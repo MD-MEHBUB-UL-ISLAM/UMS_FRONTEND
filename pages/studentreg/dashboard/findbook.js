@@ -62,7 +62,7 @@ export default function MyPage({ data }) {
 export async function getServerSideProps({ query }) {
   const inputValue = query.inputValue;
   try {
-  const response = await axios.get('https://nestjsproject-production-364f.up.railway.app/reg/findbook/'+inputValue);
+  const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/findbook/'+inputValue);
   const data = await response.data;
 
   return {

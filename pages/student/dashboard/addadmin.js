@@ -39,7 +39,7 @@ export default function AddAdmin() {
         formData.append('myfile', data.myfile[0]);
         console.log(formData);
         try {
-            const response = await axios.post("http://localhost:3000/student/insertstudent",
+            const response = await axios.post("https://umsbackendteo-production.up.railway.app/student/insertstudent",
                 formData, {
                 headers: {
                     "Content-Type": "multipart/form-data"

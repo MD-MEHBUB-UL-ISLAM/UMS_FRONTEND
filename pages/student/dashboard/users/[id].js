@@ -18,7 +18,7 @@ const router = useRouter();
   <h1>Password: {data.password}</h1>
   <h1> Info: {data.info}</h1>
       <h1>Picture: </h1>
-      <Image src={"http:/localhost:3000/student/getimage/"+data.filename} alt="me" width="150" height="150" />
+      <Image src={"https://umsbackendteo-production.up.railway.app/student/getimage/"+data.filename} alt="me" width="150" height="150" />
      <br></br>
       <button type="button" onClick={() => router.back()}>
       Click here to go back

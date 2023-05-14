@@ -66,7 +66,7 @@ export default function MyPage({ data }) {
 export async function getServerSideProps({ query }) {
   const inputValue = query.inputValue;
   try {
-  const response = await axios.get('http://localhost:3000/reg/findadmin/'+inputValue);
+  const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/findadmin/'+inputValue);
   const data = await response.data;
 
   return {

@@ -60,7 +60,7 @@ export default function MyPage({ data }) {
 export async function getServerSideProps({ query }) {
   const inputValue = query.inputValue;
   try {
-  const response = await axios.delete('http://localhost:3000/student/deletestudent/'+inputValue);
+  const response = await axios.delete('https://umsbackendteo-production.up.railway.app/student/deletestudent/'+inputValue);
   const data = await response.data;
 
   return {

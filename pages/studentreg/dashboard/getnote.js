@@ -43,7 +43,7 @@ export default function GetUsers({ data }) {
   
  export async function getServerSideProps() {
  
-      const response = await axios.get('http://localhost:3000/reg/indexnote');
+      const response = await axios.get('https://umsbackendteo-production.up.railway.app/reg/indexnote');
       const data = await response.data;
     
   return { props: { data } }

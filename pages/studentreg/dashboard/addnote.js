@@ -20,7 +20,7 @@ export default function AddUserForm() {
 
     try {
      
-      const response = await fetch('http://localhost:3000/reg/insertnote', {
+      const response = await fetch('https://umsbackendteo-production.up.railway.app/reg/insertnote', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
