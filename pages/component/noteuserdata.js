@@ -1,25 +1,8 @@
 
-import Image from 'next/image'
-
-export default function NoteLayout({data})   
-{
-    return(
-        <>
-      
-      <h1>NoteName: {data.Notename}</h1>
-      <h1>TeacherName: {data.teachername}</h1>
-      <h1>Info: {data.Noteinfo}</h1>
-
-      
-        </>
-    )
-}
-
-
 
 import Image from 'next/image'
 
-export default function NoteLayout({data})  
+export default function NoteLayout(data)  
 {
     return(
         <>

@@ -1,6 +1,6 @@
 
 
-export default function CourseLayout({data})   
+export default function CourseLayout(data)   
 {
     return(
         <>

@@ -5,7 +5,7 @@ export default function CSRPage() {
   const [data, setData] = React.useState([])
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch('http://localhost:3000/reg/index');
+      const response = await fetch('https://umsbackendteo-production.up.railway.app/reg/index');
       const data = await response.json();
       setData(data);
     }
