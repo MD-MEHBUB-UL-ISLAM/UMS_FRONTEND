@@ -19,6 +19,7 @@ import SessionCheck from "../../../component/sessioncheck";
 import SessionCheck1 from "@/pages/component/sessioncheck1";
 import AdminDrawer from "../../../component/admindrawer";
 import AdminDrawer1 from "@/pages/component/admindrawer1";
+import NoteLayout from "@/pages/component/noteuserdata";
 
 export default function UserProfile({ data }) {
   const router = useRouter();
@@ -28,13 +29,11 @@ export default function UserProfile({ data }) {
       <MyLayout1 title={data.id} />
       <AdminDrawer1 />
 
-      <UserLayout1
-        filename={data.filename}
+      <NoteLayout
      
-        Name= {data.name}
-        Email= {data.email}
-        Password= {data.password}
-        address= {data.address}
+     NoteName= {data.Notename}
+     TeacherName= {data.teachername}
+     Info= {data.Noteinfo}
       />
 
       <button type="button" onClick={() => router.back()}>

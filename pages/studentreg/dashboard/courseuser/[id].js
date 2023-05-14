@@ -4,7 +4,6 @@
 
 
 
-
 import MyLayout from "@/pages/component/layout";
 import MyLayout1 from "@/pages/component/layout1";
 import axios from "axios";
@@ -16,6 +15,7 @@ import SessionCheck from "../../../component/sessioncheck";
 import SessionCheck1 from "@/pages/component/sessioncheck1";
 import AdminDrawer from "../../../component/admindrawer";
 import AdminDrawer1 from "@/pages/component/admindrawer1";
+import CourseLayout from "@/pages/component/courseuserdata";
 
 export default function UserProfile({ data }) {
   const router = useRouter();
@@ -25,13 +25,9 @@ export default function UserProfile({ data }) {
       <MyLayout1 title={data.id} />
       <AdminDrawer1 />
 
-      <UserLayout1
-        filename={data.filename}
-     
-        Name= {data.name}
-        Email= {data.email}
-        Password= {data.password}
-        address= {data.address}
+      <CourseLayout
+          CourseName= {data.Coursename}
+          CourseID= {data.Courseid}
       />
 
       <button type="button" onClick={() => router.back()}>
