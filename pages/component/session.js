@@ -22,7 +22,7 @@ export default function Session() {
     const handleSignOut = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.get('http://localhost:3000/student/signout')
+            const response = await axios.get('https://umsbackendteo-production.up.railway.app/student/signout')
             console.log(response.data)
             sessionStorage.removeItem('email');
             setEmail(null);
